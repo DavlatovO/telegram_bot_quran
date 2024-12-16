@@ -1,37 +1,26 @@
 import sqlite3 
 
-def save_user(id, is_bot, first_name, username, user_type, message_text, message_id):
+def save_user(id, username, name):
     # Connect to the SQLite database
-    conn = sqlite3.connect('db_database.db')
+    conn = sqlite3.connect('telegram_bot_quran/data_collection.db')
 
     try:
         # Create a cursor object
         cursor = conn.cursor()
 
         # Check if the user already exists
-        cursor.execute("SELECT id FROM users WHERE id = ?", (id,))
+        cursor.execute("SELECT user_id FROM users WHERE user_id = ?", (id,))
         user_exists = cursor.fetchone()  # Fetch one result
 
         if user_exists:
             pass
-            # Insert the message into the 'messages' table
-            # cursor.execute(f'''
-                # INSERT INTO messages (message_id, user_id, message_text)
-                # VALUES ({message_id}, {id}, '{message_text}');
-            # ''')
-            # print('user exists')
         else:
             # Insert the new user into the 'users' table
             cursor.execute(f'''
-                INSERT INTO users (id, is_bot, first_name, username, type)
-                VALUES ({id}, {is_bot}, {first_name}, {username}, {user_type});
+                INSERT INTO users (user_id, username, name)
+                VALUES ({id}, '{username}', '{name}');
             ''')
-
-        #     # Insert the message into the 'messages' table
-        #     cursor.execute(f'''
-        #         INSERT INTO messages (message_id, user_id, message_text)
-        #         VALUES ({message_id}, {id}, {message_text});
-        #     ''')
+            
         # # Commit the transaction
         conn.commit()
 

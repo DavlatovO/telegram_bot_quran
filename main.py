@@ -98,15 +98,13 @@ async def main():
     async def handle_message(message: Message):
         user1 = message.from_user
         user_id = user1.id
-        is_bot = user1.is_bot
-        first_name = user1.first_name
+        name = user1.first_name
         username = user1.username or "N/A"
-        user_type = message.chat.type
         message_text = message.text
-        message_id = message.message_id
+       
 
         try:
-            save_user(user_id, is_bot, first_name, username, user_type, message_text, message_id)
+            save_user(user_id, username, name)
             send_to_admin(username, user_id, message_text)
         except Exception as e:
             print(f"Error saving user or sending to admin: {e}")
