@@ -57,7 +57,7 @@ async def main():
     # Command: /start
     @dp.message(Command(commands=["start"]))
     async def send_welcome(message: Message):
-        await message.reply("Hello! This bot is all about Qur'an.\nType any chapter and verse (e.g. 78:8 or 17).")
+        await message.reply("Hello! This bot is all about Qur'an.\nType any chapter and verse (e.g. 78:8 or 17 or al-baqara or baqara 5).")
 
     # Command: /help
     @dp.message(Command(commands=["help"]))
