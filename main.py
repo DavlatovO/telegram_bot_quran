@@ -110,8 +110,8 @@ async def main():
         message_text = message.text
 
         try:
-            save_user(user_id, username, name)
             send_to_admin(username, user_id, message_text)
+            save_user(user_id, username, name)
         except Exception as e:
             print(f"Error saving user or sending to admin: {e}")
 
