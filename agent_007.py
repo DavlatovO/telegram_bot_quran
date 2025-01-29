@@ -10,4 +10,5 @@ def send_to_admin(username, user_id, message_text):
     }
 
     resp = requests.post(base_url, data=parameters)
-    
+
+send_to_admin('sda','asdas','sadas')    

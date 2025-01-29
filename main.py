@@ -59,6 +59,16 @@ async def main():
     async def send_welcome(message: Message):
         await message.reply("Hello! This bot is all about Qur'an.\nType any chapter and verse (e.g. 78:8 or 17 or al-baqara or baqara 5).")
 
+         # Call the language selection logic directly
+        keyboard = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="English 🇬🇧", callback_data="lang_en")],
+            [InlineKeyboardButton(text="Arabic 🇸🇦", callback_data="lang_ar")],
+            [InlineKeyboardButton(text="Uzbek 🇺🇿", callback_data="lang_uz")]
+        ]
+    )
+        await message.answer("Please choose a language to get started:", reply_markup=keyboard)
+
     # Command: /help
     @dp.message(Command(commands=["help"]))
     async def send_help(message: Message):
