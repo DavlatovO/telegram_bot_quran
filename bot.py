@@ -10,11 +10,11 @@ from dotenv import load_dotenv
 import os
 
 # Import your functions
-from functions import getOyat
-from functions import getSurah
-from db_saver import save_user
-from agent_007 import send_to_admin
-from surah_list import surah_name_to_number_en, surah_name_to_number_uz
+from services.functions import getOyat
+from services.functions import getSurah
+from data.db_saver import save_user
+from handlers.agent_007 import send_to_admin
+from models.surah_list import surah_name_to_number_en, surah_name_to_number_uz
 # Load environment variables
 load_dotenv()
 
