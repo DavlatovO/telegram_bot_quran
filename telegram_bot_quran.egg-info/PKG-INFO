@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: telegram-bot-quran
+Version: 1.0.0
+Summary: Telegram bot that serves Qur'an verses and surahs in English, Arabic, and Uzbek.
+Requires-Python: >=3.11
+Requires-Dist: aiogram<4,>=3.15
+Requires-Dist: aiohttp>=3.10
+Requires-Dist: aiosqlite>=0.20
+Requires-Dist: pydantic-settings>=2.6
+Requires-Dist: cachetools>=5.5
+Provides-Extra: dev
+Requires-Dist: ruff>=0.6; extra == "dev"
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24; extra == "dev"

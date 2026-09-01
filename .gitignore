@@ -1,1 +1,27 @@
-env
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Databases / DB tooling
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+*.sqbpro
+
+# Logs
+*.log
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
