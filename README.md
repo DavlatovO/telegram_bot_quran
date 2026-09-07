@@ -41,11 +41,11 @@ through the surah with inline **« Previous / Next »** buttons.
 
 | `/start` + language picker | Verse lookup (`2:255`) | Surah navigation |
 | --- | --- | --- |
-| ![start](docs/screenshots/start.png) | ![verse](docs/screenshots/verse.png) | ![navigation](docs/screenshots/navigation.png) |
+| ![start](docs/screenshots/Start.png) | ![verse](docs/screenshots/byVerse.png) | ![navigation](docs/screenshots/Navigation.png) |
 
 | Language selected | Lookup by name (`al-fatiha`) |
 | --- | --- |
-| ![language](docs/screenshots/language.png) | ![by name](docs/screenshots/by-name.png) |
+| ![language](docs/screenshots/languages.png) | ![by name](docs/screenshots/byName.png) |
 
 ---
 
