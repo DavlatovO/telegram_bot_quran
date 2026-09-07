@@ -36,16 +36,14 @@ through the surah with inline **« Previous / Next »** buttons.
 
 ## Screenshots
 
-> Capture these from a real chat and save them under `docs/screenshots/`
-> (see `docs/screenshots/README.md` for the expected filenames).
 
 | `/start` + language picker | Verse lookup (`2:255`) | Surah navigation |
 | --- | --- | --- |
-| ![start](docs/Start.png) | ![verse](docs/byVerse.png) | ![navigation](docs/Navigation.png) |
+| ![start](docs/screenshots/Start.png) | ![verse](docs/screenshots/byVerse.png) | ![navigation](docs/screenshots/Navigation.png) |
 
 | Language selected | Lookup by name (`al-fatiha`) |
 | --- | --- |
-| ![language](docs/languages.png) | ![by name](docs/byName.png) |
+| ![language](docs/screenshots/languages.png) | ![by name](docs/screenshots/byName.png) |
 
 ---
 
